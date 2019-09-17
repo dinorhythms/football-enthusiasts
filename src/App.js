@@ -1,10 +1,14 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 import './App.css';
+import Home from './views/Home';
 
 const App = () => (
   <div>
-    <h1>Hello React, Webpack, Babel & Eslint!</h1>
+    <Switch>
+      <Route exact path="/" component={Home} />
+    </Switch>
   </div>
 );
 
